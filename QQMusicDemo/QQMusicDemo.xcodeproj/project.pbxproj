@@ -1,0 +1,400 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		47B725E51B1C09A10025A453 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 47B725E41B1C09A10025A453 /* main.m */; };
+		47B725E81B1C09A10025A453 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 47B725E71B1C09A10025A453 /* AppDelegate.m */; };
+		47B725F91B1C09A10025A453 /* QQMusicDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 47B725F81B1C09A10025A453 /* QQMusicDemoTests.m */; };
+		47B726071B1C0A110025A453 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 47B726061B1C0A110025A453 /* RootViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		47B725F31B1C09A10025A453 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 47B725D71B1C09A10025A453 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 47B725DE1B1C09A10025A453;
+			remoteInfo = QQMusicDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		47B725DF1B1C09A10025A453 /* QQMusicDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QQMusicDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		47B725E31B1C09A10025A453 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		47B725E41B1C09A10025A453 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		47B725E61B1C09A10025A453 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		47B725E71B1C09A10025A453 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		47B725F21B1C09A10025A453 /* QQMusicDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QQMusicDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		47B725F71B1C09A10025A453 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		47B725F81B1C09A10025A453 /* QQMusicDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QQMusicDemoTests.m; sourceTree = "<group>"; };
+		47B726051B1C0A110025A453 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		47B726061B1C0A110025A453 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		47B725DC1B1C09A10025A453 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		47B725EF1B1C09A10025A453 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		47B725D61B1C09A10025A453 = {
+			isa = PBXGroup;
+			children = (
+				47B725E11B1C09A10025A453 /* QQMusicDemo */,
+				47B725F51B1C09A10025A453 /* QQMusicDemoTests */,
+				47B725E01B1C09A10025A453 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		47B725E01B1C09A10025A453 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				47B725DF1B1C09A10025A453 /* QQMusicDemo.app */,
+				47B725F21B1C09A10025A453 /* QQMusicDemoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		47B725E11B1C09A10025A453 /* QQMusicDemo */ = {
+			isa = PBXGroup;
+			children = (
+				47B725E61B1C09A10025A453 /* AppDelegate.h */,
+				47B725E71B1C09A10025A453 /* AppDelegate.m */,
+				47B726051B1C0A110025A453 /* RootViewController.h */,
+				47B726061B1C0A110025A453 /* RootViewController.m */,
+				47B725E21B1C09A10025A453 /* Supporting Files */,
+			);
+			path = QQMusicDemo;
+			sourceTree = "<group>";
+		};
+		47B725E21B1C09A10025A453 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				47B725E31B1C09A10025A453 /* Info.plist */,
+				47B725E41B1C09A10025A453 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		47B725F51B1C09A10025A453 /* QQMusicDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				47B725F81B1C09A10025A453 /* QQMusicDemoTests.m */,
+				47B725F61B1C09A10025A453 /* Supporting Files */,
+			);
+			path = QQMusicDemoTests;
+			sourceTree = "<group>";
+		};
+		47B725F61B1C09A10025A453 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				47B725F71B1C09A10025A453 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		47B725DE1B1C09A10025A453 /* QQMusicDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 47B725FC1B1C09A10025A453 /* Build configuration list for PBXNativeTarget "QQMusicDemo" */;
+			buildPhases = (
+				47B725DB1B1C09A10025A453 /* Sources */,
+				47B725DC1B1C09A10025A453 /* Frameworks */,
+				47B725DD1B1C09A10025A453 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = QQMusicDemo;
+			productName = QQMusicDemo;
+			productReference = 47B725DF1B1C09A10025A453 /* QQMusicDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		47B725F11B1C09A10025A453 /* QQMusicDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 47B725FF1B1C09A10025A453 /* Build configuration list for PBXNativeTarget "QQMusicDemoTests" */;
+			buildPhases = (
+				47B725EE1B1C09A10025A453 /* Sources */,
+				47B725EF1B1C09A10025A453 /* Frameworks */,
+				47B725F01B1C09A10025A453 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				47B725F41B1C09A10025A453 /* PBXTargetDependency */,
+			);
+			name = QQMusicDemoTests;
+			productName = QQMusicDemoTests;
+			productReference = 47B725F21B1C09A10025A453 /* QQMusicDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		47B725D71B1C09A10025A453 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = Haoxiang;
+				TargetAttributes = {
+					47B725DE1B1C09A10025A453 = {
+						CreatedOnToolsVersion = 6.3.2;
+					};
+					47B725F11B1C09A10025A453 = {
+						CreatedOnToolsVersion = 6.3.2;
+						TestTargetID = 47B725DE1B1C09A10025A453;
+					};
+				};
+			};
+			buildConfigurationList = 47B725DA1B1C09A10025A453 /* Build configuration list for PBXProject "QQMusicDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 47B725D61B1C09A10025A453;
+			productRefGroup = 47B725E01B1C09A10025A453 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				47B725DE1B1C09A10025A453 /* QQMusicDemo */,
+				47B725F11B1C09A10025A453 /* QQMusicDemoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		47B725DD1B1C09A10025A453 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		47B725F01B1C09A10025A453 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		47B725DB1B1C09A10025A453 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				47B725E81B1C09A10025A453 /* AppDelegate.m in Sources */,
+				47B725E51B1C09A10025A453 /* main.m in Sources */,
+				47B726071B1C0A110025A453 /* RootViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		47B725EE1B1C09A10025A453 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				47B725F91B1C09A10025A453 /* QQMusicDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		47B725F41B1C09A10025A453 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 47B725DE1B1C09A10025A453 /* QQMusicDemo */;
+			targetProxy = 47B725F31B1C09A10025A453 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		47B725FA1B1C09A10025A453 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		47B725FB1B1C09A10025A453 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		47B725FD1B1C09A10025A453 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = QQMusicDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		47B725FE1B1C09A10025A453 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = QQMusicDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		47B726001B1C09A10025A453 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = QQMusicDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/QQMusicDemo.app/QQMusicDemo";
+			};
+			name = Debug;
+		};
+		47B726011B1C09A10025A453 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = QQMusicDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/QQMusicDemo.app/QQMusicDemo";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		47B725DA1B1C09A10025A453 /* Build configuration list for PBXProject "QQMusicDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				47B725FA1B1C09A10025A453 /* Debug */,
+				47B725FB1B1C09A10025A453 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		47B725FC1B1C09A10025A453 /* Build configuration list for PBXNativeTarget "QQMusicDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				47B725FD1B1C09A10025A453 /* Debug */,
+				47B725FE1B1C09A10025A453 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		47B725FF1B1C09A10025A453 /* Build configuration list for PBXNativeTarget "QQMusicDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				47B726001B1C09A10025A453 /* Debug */,
+				47B726011B1C09A10025A453 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 47B725D71B1C09A10025A453 /* Project object */;
+}
