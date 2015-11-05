@@ -5,7 +5,6 @@ build/*
 *~.nib
 *.swp
 
- 
 # 排除OS X的文件夹显示属性目录
 .DS_Store
   
