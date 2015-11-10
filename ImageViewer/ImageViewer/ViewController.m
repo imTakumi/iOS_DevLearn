@@ -45,12 +45,17 @@
     NSLog(@"读取图像信息");
     if(_imageList == nil) {
         NSLog(@"实力化数组");
-        NSDictionary *dict1 = @{@"name": @"biaoqingdi", @"desc": @"表情"};
-        NSDictionary *dict2 = @{@"name": @"bingli", @"desc": @"病例"};
-        NSDictionary *dict3 = @{@"name": @"chiniupa", @"desc": @"吃牛扒"};
-        NSDictionary *dict4 = @{@"name": @"danteng", @"desc": @"蛋疼"};
-        NSDictionary *dict5 = @{@"name": @"wangba", @"desc": @"王八"};
-        _imageList = @[dict1, dict2, dict3, dict4, dict5];
+        //Bundle "包"
+        NSString *path = [[NSBundle mainBundle] pathForResource:@"ImageList" ofType:@"plist"];
+        NSLog(@"%@", path);
+        //OC中出现ContentsOfFile，通常需要完整路径
+        _imageList = [NSArray arrayWithContentsOfFile:path];
+//        NSDictionary *dict1 = @{@"name": @"biaoqingdi", @"desc": @"表情"};
+//        NSDictionary *dict2 = @{@"name": @"bingli", @"desc": @"病例"};
+//        NSDictionary *dict3 = @{@"name": @"chiniupa", @"desc": @"吃牛扒"};
+//        NSDictionary *dict4 = @{@"name": @"danteng", @"desc": @"蛋疼"};
+//        NSDictionary *dict5 = @{@"name": @"wangba", @"desc": @"王八"};
+//        _imageList = @[dict1, dict2, dict3, dict4, dict5];
     }
     return _imageList;
 }
