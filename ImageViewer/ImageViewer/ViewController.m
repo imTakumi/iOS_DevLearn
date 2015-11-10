@@ -28,10 +28,32 @@
 @property (nonatomic, strong) UIButton *rightButton;
 
 /** 当前显示的照片索引 */
-@property (nonatomic, assign) int index;
+@property (nonatomic, assign) long index;
+
+/** 记录图片信息数组 */
+@property (nonatomic, strong) NSArray *imageList;
 @end
 
 @implementation ViewController
+
+/**
+    懒加载，通过getter方法实现
+    在最需要时候才加载
+ */
+- (NSArray *)imageList
+{
+    NSLog(@"读取图像信息");
+    if(_imageList == nil) {
+        NSLog(@"实力化数组");
+        NSDictionary *dict1 = @{@"name": @"biaoqingdi", @"desc": @"表情"};
+        NSDictionary *dict2 = @{@"name": @"bingli", @"desc": @"病例"};
+        NSDictionary *dict3 = @{@"name": @"chiniupa", @"desc": @"吃牛扒"};
+        NSDictionary *dict4 = @{@"name": @"danteng", @"desc": @"蛋疼"};
+        NSDictionary *dict5 = @{@"name": @"wangba", @"desc": @"王八"};
+        _imageList = @[dict1, dict2, dict3, dict4, dict5];
+    }
+    return _imageList;
+}
 
 /** 在viewDidLoad创建界面 */
 - (void)viewDidLoad
@@ -86,7 +108,7 @@
     _rightButton.tag = 1;
     
     [_rightButton addTarget:self action:@selector(clickButton:) forControlEvents:UIControlEventTouchUpInside];
-    
+
     // 显示照片信息
     [self showPhotoInfo];
 }
@@ -96,11 +118,25 @@
  */
 - (void)showPhotoInfo
 {
+//    NSLog(@"%s",__func__);
     // 设置序号
-    self.noLabel.text = [NSString stringWithFormat:@"%d/%d", self.index + 1, 5];
+    self.noLabel.text = [NSString stringWithFormat:@"%ld/%d", self.index + 1, 5];
     
+    //每次调用方法都会生成，效率不高
+    /*
+    NSDictionary *dict1 = @{@"name": @"biaoqingdi", @"desc": @"表情"};
+    NSDictionary *dict2 = @{@"name": @"bingli", @"desc": @"病例"};
+    NSDictionary *dict3 = @{@"name": @"chiniupa", @"desc": @"吃牛扒"};
+    NSDictionary *dict4 = @{@"name": @"danteng", @"desc": @"蛋疼"};
+    NSDictionary *dict5 = @{@"name": @"wangba", @"desc": @"王八"};
+    
+    NSArray *array = @[dict1, dict2, dict3, dict4, dict5];
+    */
+    self.iconImage.image = [UIImage imageNamed:self.imageList[self.index][@"name"]];
+    self.descLabel.text = self.imageList[self.index][@"desc"];
     // 设置图像和描述
-    switch (self.index) {
+    /*
+     switch (self.index) {
         case 0:
             self.iconImage.image = [UIImage imageNamed:@"biaoqingdi"];
             self.descLabel.text = @"表情";
@@ -121,8 +157,10 @@
             self.iconImage.image = [UIImage imageNamed:@"wangba"];
             self.descLabel.text = @"王八";
             break;
+     
     }
-    
+    */
+                             
     // 控制按钮状态
     //    if (self.index == 4) {
     //        self.rightButton.enabled = NO;
