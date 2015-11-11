@@ -38,10 +38,9 @@
 
 /**
     懒加载，通过getter方法实现
-    在最需要时候才加载
+    在最需要时候才加载,在此方法中不要使用self语法不然会死循环
  */
-- (NSArray *)imageList
-{
+- (NSArray *)imageList {
     NSLog(@"读取图像信息");
     if(_imageList == nil) {
         NSLog(@"实力化数组");
@@ -60,69 +59,88 @@
     return _imageList;
 }
 
-/** 在viewDidLoad创建界面 */
-- (void)viewDidLoad
-{
-    [super viewDidLoad];
-    
-    // 1. 序号
-    _noLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 20, self.view.bounds.size.width, 40)];
-    //    _noLabel.text = @"1/5";
-    _noLabel.textAlignment  = NSTextAlignmentCenter;
-    [self.view addSubview:_noLabel];
-    
-    // 2. 图像
-    CGFloat imageW = 200;
-    CGFloat imageH = 200;
-    CGFloat imageX = (self.view.bounds.size.width - imageW) * 0.5;
-    CGFloat imageY = CGRectGetMaxY(self.noLabel.frame) + 20;
-    
-    _iconImage = [[UIImageView alloc] initWithFrame:CGRectMake(imageX, imageY, imageW, imageH)];
-    //    _iconImage.image = [UIImage imageNamed:@"biaoqingdi"];
-    [self.view addSubview:_iconImage];
-    
-    // 3. 描述文字
-    CGFloat descY = CGRectGetMaxY(self.iconImage.frame);
-    _descLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, descY, self.view.bounds.size.width, 100)];
-    //    _descLabel.text = @"神马表情";
-    _descLabel.textAlignment = NSTextAlignmentCenter;
-    [self.view addSubview:_descLabel];
-    
-    // 4. 左边的按钮
-    _leftButton = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 40, 40)];
-    CGFloat centerY = self.iconImage.center.y;
-    CGFloat centerX = self.iconImage.frame.origin.x * 0.5;
-    _leftButton.center = CGPointMake(centerX, centerY);
-    
-    [_leftButton setBackgroundImage:[UIImage imageNamed:@"left_normal"] forState:UIControlStateNormal];
-    [_leftButton setBackgroundImage:[UIImage imageNamed:@"left_highlighted"] forState:UIControlStateHighlighted];
-    [self.view addSubview:_leftButton];
-    
-    _leftButton.tag = -1;
-    
-    [_leftButton addTarget:self action:@selector(clickButton:) forControlEvents:UIControlEventTouchUpInside];
-    
-    // 5. 右边的按钮
-    _rightButton = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 40, 40)];
-    _rightButton.center = CGPointMake(self.view.bounds.size.width - centerX, centerY);
-    
-    [_rightButton setBackgroundImage:[UIImage imageNamed:@"right_normal"] forState:UIControlStateNormal];
-    [_rightButton setBackgroundImage:[UIImage imageNamed:@"right_highlighted"] forState:UIControlStateHighlighted];
-    [self.view addSubview:_rightButton];
-    
-    _rightButton.tag = 1;
-    
-    [_rightButton addTarget:self action:@selector(clickButton:) forControlEvents:UIControlEventTouchUpInside];
+#pragma mark - 控件懒加载
+- (UILabel *)noLabel {
+    if (_noLabel == nil) {
+        _noLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 20, self.view.bounds.size.width, 40)];
+        //    _noLabel.text = @"1/5";
+        _noLabel.textAlignment  = NSTextAlignmentCenter;
+        [self.view addSubview:_noLabel];
+    }
+    return _noLabel;
+}
 
-    // 显示照片信息
+- (UIImageView *)iconImage {
+    if (_iconImage == nil) {
+        CGFloat imageW = 200;
+        CGFloat imageH = 200;
+        CGFloat imageX = (self.view.bounds.size.width - imageW) * 0.5;
+        CGFloat imageY = CGRectGetMaxY(self.noLabel.frame) + 20;
+        
+        _iconImage = [[UIImageView alloc] initWithFrame:CGRectMake(imageX, imageY, imageW, imageH)];
+        //    _iconImage.image = [UIImage imageNamed:@"biaoqingdi"];
+        [self.view addSubview:_iconImage];
+    }
+    return _iconImage;
+}
+
+- (UILabel *)descLabel {
+    if (_descLabel == nil) {
+        CGFloat descY = CGRectGetMaxY(self.iconImage.frame);
+        _descLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, descY, self.view.bounds.size.width, 100)];
+        //    _descLabel.text = @"神马表情";
+        _descLabel.textAlignment = NSTextAlignmentCenter;
+        [self.view addSubview:_descLabel];
+    }
+    return _descLabel;
+}
+
+- (UIButton *)leftButton {
+    if (_leftButton == nil) {
+        _leftButton = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 40, 40)];
+        CGFloat centerY = self.iconImage.center.y;
+        CGFloat centerX = self.iconImage.frame.origin.x * 0.5;
+        _leftButton.center = CGPointMake(centerX, centerY);
+        
+        [_leftButton setBackgroundImage:[UIImage imageNamed:@"left_normal"] forState:UIControlStateNormal];
+        [_leftButton setBackgroundImage:[UIImage imageNamed:@"left_highlighted"] forState:UIControlStateHighlighted];
+        [self.view addSubview:_leftButton];
+        
+        _leftButton.tag = -1;
+        
+        [_leftButton addTarget:self action:@selector(clickButton:) forControlEvents:UIControlEventTouchUpInside];
+    }
+    return _leftButton;
+}
+
+- (UIButton *)rightButton {
+    if (_rightButton == nil) {
+        _rightButton = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 40, 40)];
+        CGFloat centerY = self.iconImage.center.y;
+        CGFloat centerX = self.iconImage.frame.origin.x * 0.5;
+        _rightButton.center = CGPointMake(self.view.bounds.size.width - centerX, centerY);
+        [_rightButton setBackgroundImage:[UIImage imageNamed:@"right_normal"] forState:UIControlStateNormal];
+        [_rightButton setBackgroundImage:[UIImage imageNamed:@"right_highlighted"] forState:UIControlStateHighlighted];
+        [self.view addSubview:_rightButton];
+        
+        _rightButton.tag = 1;
+        
+        [_rightButton addTarget:self action:@selector(clickButton:) forControlEvents:UIControlEventTouchUpInside];
+    }
+    return _rightButton;
+}
+
+/** 在viewDidLoad创建界面 */
+- (void)viewDidLoad {
+    [super viewDidLoad];
+
     [self showPhotoInfo];
 }
 
 /**
  重构的目的：让相同的代码只出现一次
  */
-- (void)showPhotoInfo
-{
+- (void)showPhotoInfo {
 //    NSLog(@"%s",__func__);
     // 设置序号
     self.noLabel.text = [NSString stringWithFormat:@"%ld/%d", self.index + 1, 5];
@@ -178,8 +196,7 @@
 }
 
 // 在OC中，很多方法的第一个参数，都是触发该方法的对象！
-- (void)clickButton:(UIButton *)button
-{
+- (void)clickButton:(UIButton *)button {
     // 根据按钮调整当前显示图片的索引?
     self.index += button.tag;
     
