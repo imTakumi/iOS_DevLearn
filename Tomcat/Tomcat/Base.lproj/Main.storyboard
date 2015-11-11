@@ -17,23 +17,90 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="angry_00" highlighted="YES" translatesAutoresizingMaskIntoConstraints="NO" id="B5i-ap-cCw">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="angry_00" translatesAutoresizingMaskIntoConstraints="NO" id="B5i-ap-cCw">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                                 <animations/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ssN-RT-mLg">
-                                <rect key="frame" x="0.0" y="420" width="60" height="60"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cee-q1-uSD" userLabel="Scratch">
+                                <rect key="frame" x="260" y="352" width="60" height="60"/>
                                 <animations/>
-                                <state key="normal" backgroundImage="eat"/>
+                                <state key="normal" title="scratch" backgroundImage="scratch">
+                                    <color key="titleColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </state>
                                 <connections>
-                                    <action selector="eatBird" destination="BYZ-38-t0r" eventType="touchUpInside" id="pWM-hS-f3q"/>
+                                    <action selector="setAnimationType:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6AV-96-jCP"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZNf-ui-3oG">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="99h-iH-01E" userLabel="Pie">
+                                <rect key="frame" x="260" y="420" width="60" height="60"/>
+                                <animations/>
+                                <state key="normal" title="pie" backgroundImage="pie">
+                                    <color key="titleColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="setAnimationType:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ELl-8M-9p8"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="40a-Tc-xv1" userLabel="Cymbal">
+                                <rect key="frame" x="0.0" y="284" width="60" height="60"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                <state key="normal" title="cymbal" backgroundImage="cymbal">
+                                    <color key="titleColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="setAnimationType:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PHG-6P-M5X"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8q8-Ww-va2" userLabel="Drink">
+                                <rect key="frame" x="0.0" y="352" width="60" height="60"/>
+                                <animations/>
+                                <state key="normal" title="drink" backgroundImage="drink">
+                                    <color key="titleColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="setAnimationType:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Wc2-Rv-Hxk"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ssN-RT-mLg" userLabel="Eat">
+                                <rect key="frame" x="0.0" y="420" width="60" height="60"/>
+                                <animations/>
+                                <state key="normal" title="eat" backgroundImage="eat">
+                                    <color key="titleColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="setAnimationType:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cU0-9k-ZdK"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZNf-ui-3oG" userLabel="Knockout">
                                 <rect key="frame" x="65" y="76" width="191" height="158"/>
                                 <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <state key="normal" title="knockout">
+                                    <color key="titleColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </state>
                                 <connections>
-                                    <action selector="knockOut" destination="BYZ-38-t0r" eventType="touchUpInside" id="OGs-6U-6Pp"/>
+                                    <action selector="setAnimationType:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ipq-dD-jS5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wa4-9h-UxG" userLabel="Stomach">
+                                <rect key="frame" x="68" y="302" width="191" height="158"/>
+                                <animations/>
+                                <state key="normal" title="stomach">
+                                    <color key="titleColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="setAnimationType:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5UH-0O-IWG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V78-rI-FF1" userLabel="Fart">
+                                <rect key="frame" x="260" y="284" width="60" height="60"/>
+                                <animations/>
+                                <state key="normal" title="fart" backgroundImage="fart">
+                                    <color key="titleColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="setAnimationType:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9Yy-qW-g9D"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -52,6 +119,11 @@
     </scenes>
     <resources>
         <image name="angry_00" width="640" height="1024"/>
+        <image name="cymbal" width="60" height="60"/>
+        <image name="drink" width="60" height="60"/>
         <image name="eat" width="60" height="60"/>
+        <image name="fart" width="60" height="60"/>
+        <image name="pie" width="60" height="60"/>
+        <image name="scratch" width="60" height="60"/>
     </resources>
 </document>
