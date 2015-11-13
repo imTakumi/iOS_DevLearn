@@ -9,11 +9,17 @@
 #import "ViewController.h"
 
 @interface ViewController ()
-
+@property (nonatomic, strong) NSArray *appList;
 @end
 
 @implementation ViewController
 
+-(NSArray *)appList {
+    if (_appList == nil) {
+        _appList = [NSArray arrayWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"app" ofType:@"plist"]];
+    }
+    return _appList;
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
@@ -48,6 +54,26 @@
         UIView *appView = [[UIView alloc] initWithFrame:CGRectMake(x, y, kAppViewW, kAppViewH)];
         appView.backgroundColor = [UIColor redColor];
         [self.view addSubview:appView];
+        
+        /**实现视图内部细节
+            1> UIImageView -> 应用程序图标
+            2> UILable -> 程序名称
+            3> UIButton ->  下载按钮
+            
+            CGRectGetMaxY(frame) = frame.origin.y + frame.size.height
+        */
+        UIImageView *icon = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, kAppViewW, 50)];
+        icon.backgroundColor = [UIColor yellowColor];
+        [appView addSubview:icon];
+        
+        UILabel *lable = [[UILabel alloc] initWithFrame:CGRectMake( 0, CGRectGetMaxY(icon.frame), kAppViewW, 20)];
+        lable.backgroundColor = [UIColor blueColor];
+        [appView addSubview:lable];
+        
+        UIButton *button = [[UIButton alloc] initWithFrame:CGRectMake(0, CGRectGetMaxY(lable.frame), kAppViewW, 20)];
+        button.backgroundColor = [UIColor purpleColor];
+        [appView addSubview:button];
+        
     }
 }
 
