@@ -18,16 +18,14 @@
  1> plist中的键值名称必须与模型中的属性一致
  2> 模型中的属性可以不全部出现在plist中
  */
-- (UIImage *)image
-{
+- (UIImage *)image {
     if (_image == nil) {
         _image = [UIImage imageNamed:self.icon];
     }
     return _image;
 }
 
-- (instancetype)initWithDict:(NSDictionary *)dict
-{
+- (instancetype)initWithDict:(NSDictionary *)dict {
     // self 是 对象
     self = [super init];
     if (self) {
@@ -49,14 +47,12 @@
     return self;
 }
 
-+ (instancetype)appInfoWithDict:(NSDictionary *)dict
-{
++ (instancetype)appInfoWithDict:(NSDictionary *)dict {
     // self 是 class
     return [[self alloc] initWithDict:dict];
 }
 
-+ (NSArray *)appList
-{
++ (NSArray *)appList {
     NSArray *array = [NSArray arrayWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"app.plist" ofType:nil]];
     
     // 创建一个临时数组

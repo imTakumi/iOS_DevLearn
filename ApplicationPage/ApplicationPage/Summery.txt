@@ -1,0 +1,15 @@
+开发小结
+
+1.确定开发思路
+2.搭建界面，编写代码
+3.九宫格布局
+4.字典转模型，在iOS开发非常重要
+/** 使用字典实例化模型 */
+- (instancetype)initWithDict:(NSDictionary *)dict;
+/** 类方法可以快速实例化一个对象 */
++ (instancetype)appInfoWithDict:(NSdictionary *)dict;
+//KVC赋值
+[self setValuesForKeysWithDictionary:dict];
+5.实现按钮监听方法
+6.导入XIB，简化搭建界面
+7.自定义视图，使用模型设置视图

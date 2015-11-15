@@ -30,6 +30,9 @@
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                     <state key="highlighted" backgroundImage="buttongreen_highlighted"/>
+                    <connections>
+                        <action selector="click:" destination="KU3-5Q-Gcv" eventType="touchUpInside" id="Kja-gM-gS6"/>
+                    </connections>
                 </button>
             </subviews>
             <animations/>
@@ -37,9 +40,8 @@
             <nil key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
-                <outlet property="button" destination="cHe-Kq-F8s" id="h22-QX-lAW"/>
-                <outlet property="iconView" destination="t8N-iS-qfT" id="uDm-Fe-Zso"/>
-                <outlet property="label" destination="roy-yR-7RY" id="JaM-FM-HAk"/>
+                <outlet property="iconView" destination="t8N-iS-qfT" id="vlM-nz-1BM"/>
+                <outlet property="label" destination="roy-yR-7RY" id="Vz7-yc-x3H"/>
             </connections>
         </view>
     </objects>
