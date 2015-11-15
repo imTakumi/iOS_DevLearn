@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		472828571BF8B5020043927E /* View.xib in Resources */ = {isa = PBXBuildFile; fileRef = 472828561BF8B5020043927E /* View.xib */; };
 		4728285A1BF8B5CA0043927E /* AppInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 472828591BF8B5CA0043927E /* AppInfo.m */; };
+		4728285D1BF8B8230043927E /* AppView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4728285C1BF8B8230043927E /* AppView.m */; };
 		477EEE9E1BF616B80010CE0A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 477EEE9D1BF616B80010CE0A /* main.m */; };
 		477EEEA11BF616B80010CE0A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 477EEEA01BF616B80010CE0A /* AppDelegate.m */; };
 		477EEEA41BF616B80010CE0A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 477EEEA31BF616B80010CE0A /* ViewController.m */; };
@@ -41,6 +42,8 @@
 		472828561BF8B5020043927E /* View.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = View.xib; sourceTree = "<group>"; };
 		472828581BF8B5CA0043927E /* AppInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppInfo.h; sourceTree = "<group>"; };
 		472828591BF8B5CA0043927E /* AppInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppInfo.m; sourceTree = "<group>"; };
+		4728285B1BF8B8230043927E /* AppView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppView.h; sourceTree = "<group>"; };
+		4728285C1BF8B8230043927E /* AppView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppView.m; sourceTree = "<group>"; };
 		477EEE991BF616B80010CE0A /* ApplicationPage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ApplicationPage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		477EEE9D1BF616B80010CE0A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		477EEE9F1BF616B80010CE0A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -114,6 +117,8 @@
 				477EEEA31BF616B80010CE0A /* ViewController.m */,
 				472828581BF8B5CA0043927E /* AppInfo.h */,
 				472828591BF8B5CA0043927E /* AppInfo.m */,
+				4728285B1BF8B8230043927E /* AppView.h */,
+				4728285C1BF8B8230043927E /* AppView.m */,
 				472828561BF8B5020043927E /* View.xib */,
 				477EEEA51BF616B80010CE0A /* Main.storyboard */,
 				477EEEA81BF616B80010CE0A /* Assets.xcassets */,
@@ -288,6 +293,7 @@
 			files = (
 				477EEEA41BF616B80010CE0A /* ViewController.m in Sources */,
 				4728285A1BF8B5CA0043927E /* AppInfo.m in Sources */,
+				4728285D1BF8B8230043927E /* AppView.m in Sources */,
 				477EEEA11BF616B80010CE0A /* AppDelegate.m in Sources */,
 				477EEE9E1BF616B80010CE0A /* main.m in Sources */,
 			);
