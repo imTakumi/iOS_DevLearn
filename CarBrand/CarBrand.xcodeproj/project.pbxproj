@@ -1,0 +1,521 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		478360551C05DFBC00A60F4B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 478360541C05DFBC00A60F4B /* main.m */; };
+		478360581C05DFBC00A60F4B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 478360571C05DFBC00A60F4B /* AppDelegate.m */; };
+		4783605B1C05DFBC00A60F4B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4783605A1C05DFBC00A60F4B /* ViewController.m */; };
+		4783605E1C05DFBC00A60F4B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4783605C1C05DFBC00A60F4B /* Main.storyboard */; };
+		478360601C05DFBC00A60F4B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4783605F1C05DFBC00A60F4B /* Assets.xcassets */; };
+		478360631C05DFBC00A60F4B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 478360611C05DFBC00A60F4B /* LaunchScreen.storyboard */; };
+		4783606E1C05DFBD00A60F4B /* CarBrandTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4783606D1C05DFBD00A60F4B /* CarBrandTests.m */; };
+		478360791C05DFBD00A60F4B /* CarBrandUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 478360781C05DFBD00A60F4B /* CarBrandUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4783606A1C05DFBD00A60F4B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 478360481C05DFBC00A60F4B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4783604F1C05DFBC00A60F4B;
+			remoteInfo = CarBrand;
+		};
+		478360751C05DFBD00A60F4B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 478360481C05DFBC00A60F4B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4783604F1C05DFBC00A60F4B;
+			remoteInfo = CarBrand;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		478360501C05DFBC00A60F4B /* CarBrand.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CarBrand.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		478360541C05DFBC00A60F4B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		478360561C05DFBC00A60F4B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		478360571C05DFBC00A60F4B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		478360591C05DFBC00A60F4B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		4783605A1C05DFBC00A60F4B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		4783605D1C05DFBC00A60F4B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4783605F1C05DFBC00A60F4B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		478360621C05DFBC00A60F4B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		478360641C05DFBC00A60F4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		478360691C05DFBD00A60F4B /* CarBrandTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CarBrandTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4783606D1C05DFBD00A60F4B /* CarBrandTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CarBrandTests.m; sourceTree = "<group>"; };
+		4783606F1C05DFBD00A60F4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		478360741C05DFBD00A60F4B /* CarBrandUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CarBrandUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		478360781C05DFBD00A60F4B /* CarBrandUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CarBrandUITests.m; sourceTree = "<group>"; };
+		4783607A1C05DFBD00A60F4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4783604D1C05DFBC00A60F4B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		478360661C05DFBD00A60F4B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		478360711C05DFBD00A60F4B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		478360471C05DFBC00A60F4B = {
+			isa = PBXGroup;
+			children = (
+				478360521C05DFBC00A60F4B /* CarBrand */,
+				4783606C1C05DFBD00A60F4B /* CarBrandTests */,
+				478360771C05DFBD00A60F4B /* CarBrandUITests */,
+				478360511C05DFBC00A60F4B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		478360511C05DFBC00A60F4B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				478360501C05DFBC00A60F4B /* CarBrand.app */,
+				478360691C05DFBD00A60F4B /* CarBrandTests.xctest */,
+				478360741C05DFBD00A60F4B /* CarBrandUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		478360521C05DFBC00A60F4B /* CarBrand */ = {
+			isa = PBXGroup;
+			children = (
+				478360561C05DFBC00A60F4B /* AppDelegate.h */,
+				478360571C05DFBC00A60F4B /* AppDelegate.m */,
+				478360591C05DFBC00A60F4B /* ViewController.h */,
+				4783605A1C05DFBC00A60F4B /* ViewController.m */,
+				4783605C1C05DFBC00A60F4B /* Main.storyboard */,
+				4783605F1C05DFBC00A60F4B /* Assets.xcassets */,
+				478360611C05DFBC00A60F4B /* LaunchScreen.storyboard */,
+				478360641C05DFBC00A60F4B /* Info.plist */,
+				478360531C05DFBC00A60F4B /* Supporting Files */,
+			);
+			path = CarBrand;
+			sourceTree = "<group>";
+		};
+		478360531C05DFBC00A60F4B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				478360541C05DFBC00A60F4B /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4783606C1C05DFBD00A60F4B /* CarBrandTests */ = {
+			isa = PBXGroup;
+			children = (
+				4783606D1C05DFBD00A60F4B /* CarBrandTests.m */,
+				4783606F1C05DFBD00A60F4B /* Info.plist */,
+			);
+			path = CarBrandTests;
+			sourceTree = "<group>";
+		};
+		478360771C05DFBD00A60F4B /* CarBrandUITests */ = {
+			isa = PBXGroup;
+			children = (
+				478360781C05DFBD00A60F4B /* CarBrandUITests.m */,
+				4783607A1C05DFBD00A60F4B /* Info.plist */,
+			);
+			path = CarBrandUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4783604F1C05DFBC00A60F4B /* CarBrand */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4783607D1C05DFBD00A60F4B /* Build configuration list for PBXNativeTarget "CarBrand" */;
+			buildPhases = (
+				4783604C1C05DFBC00A60F4B /* Sources */,
+				4783604D1C05DFBC00A60F4B /* Frameworks */,
+				4783604E1C05DFBC00A60F4B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CarBrand;
+			productName = CarBrand;
+			productReference = 478360501C05DFBC00A60F4B /* CarBrand.app */;
+			productType = "com.apple.product-type.application";
+		};
+		478360681C05DFBD00A60F4B /* CarBrandTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 478360801C05DFBD00A60F4B /* Build configuration list for PBXNativeTarget "CarBrandTests" */;
+			buildPhases = (
+				478360651C05DFBD00A60F4B /* Sources */,
+				478360661C05DFBD00A60F4B /* Frameworks */,
+				478360671C05DFBD00A60F4B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4783606B1C05DFBD00A60F4B /* PBXTargetDependency */,
+			);
+			name = CarBrandTests;
+			productName = CarBrandTests;
+			productReference = 478360691C05DFBD00A60F4B /* CarBrandTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		478360731C05DFBD00A60F4B /* CarBrandUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 478360831C05DFBD00A60F4B /* Build configuration list for PBXNativeTarget "CarBrandUITests" */;
+			buildPhases = (
+				478360701C05DFBD00A60F4B /* Sources */,
+				478360711C05DFBD00A60F4B /* Frameworks */,
+				478360721C05DFBD00A60F4B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				478360761C05DFBD00A60F4B /* PBXTargetDependency */,
+			);
+			name = CarBrandUITests;
+			productName = CarBrandUITests;
+			productReference = 478360741C05DFBD00A60F4B /* CarBrandUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		478360481C05DFBC00A60F4B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = "吴皓翔";
+				TargetAttributes = {
+					4783604F1C05DFBC00A60F4B = {
+						CreatedOnToolsVersion = 7.1.1;
+					};
+					478360681C05DFBD00A60F4B = {
+						CreatedOnToolsVersion = 7.1.1;
+						TestTargetID = 4783604F1C05DFBC00A60F4B;
+					};
+					478360731C05DFBD00A60F4B = {
+						CreatedOnToolsVersion = 7.1.1;
+						TestTargetID = 4783604F1C05DFBC00A60F4B;
+					};
+				};
+			};
+			buildConfigurationList = 4783604B1C05DFBC00A60F4B /* Build configuration list for PBXProject "CarBrand" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 478360471C05DFBC00A60F4B;
+			productRefGroup = 478360511C05DFBC00A60F4B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4783604F1C05DFBC00A60F4B /* CarBrand */,
+				478360681C05DFBD00A60F4B /* CarBrandTests */,
+				478360731C05DFBD00A60F4B /* CarBrandUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4783604E1C05DFBC00A60F4B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				478360631C05DFBC00A60F4B /* LaunchScreen.storyboard in Resources */,
+				478360601C05DFBC00A60F4B /* Assets.xcassets in Resources */,
+				4783605E1C05DFBC00A60F4B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		478360671C05DFBD00A60F4B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		478360721C05DFBD00A60F4B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4783604C1C05DFBC00A60F4B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4783605B1C05DFBC00A60F4B /* ViewController.m in Sources */,
+				478360581C05DFBC00A60F4B /* AppDelegate.m in Sources */,
+				478360551C05DFBC00A60F4B /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		478360651C05DFBD00A60F4B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4783606E1C05DFBD00A60F4B /* CarBrandTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		478360701C05DFBD00A60F4B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				478360791C05DFBD00A60F4B /* CarBrandUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4783606B1C05DFBD00A60F4B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4783604F1C05DFBC00A60F4B /* CarBrand */;
+			targetProxy = 4783606A1C05DFBD00A60F4B /* PBXContainerItemProxy */;
+		};
+		478360761C05DFBD00A60F4B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4783604F1C05DFBC00A60F4B /* CarBrand */;
+			targetProxy = 478360751C05DFBD00A60F4B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4783605C1C05DFBC00A60F4B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4783605D1C05DFBC00A60F4B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		478360611C05DFBC00A60F4B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				478360621C05DFBC00A60F4B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4783607B1C05DFBD00A60F4B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4783607C1C05DFBD00A60F4B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4783607E1C05DFBD00A60F4B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = CarBrand/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = wuhx.CarBrand;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		4783607F1C05DFBD00A60F4B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = CarBrand/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = wuhx.CarBrand;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		478360811C05DFBD00A60F4B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = CarBrandTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = wuhx.CarBrandTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CarBrand.app/CarBrand";
+			};
+			name = Debug;
+		};
+		478360821C05DFBD00A60F4B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = CarBrandTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = wuhx.CarBrandTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CarBrand.app/CarBrand";
+			};
+			name = Release;
+		};
+		478360841C05DFBD00A60F4B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = CarBrandUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = wuhx.CarBrandUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = CarBrand;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		478360851C05DFBD00A60F4B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = CarBrandUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = wuhx.CarBrandUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = CarBrand;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4783604B1C05DFBC00A60F4B /* Build configuration list for PBXProject "CarBrand" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4783607B1C05DFBD00A60F4B /* Debug */,
+				4783607C1C05DFBD00A60F4B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4783607D1C05DFBD00A60F4B /* Build configuration list for PBXNativeTarget "CarBrand" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4783607E1C05DFBD00A60F4B /* Debug */,
+				4783607F1C05DFBD00A60F4B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		478360801C05DFBD00A60F4B /* Build configuration list for PBXNativeTarget "CarBrandTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				478360811C05DFBD00A60F4B /* Debug */,
+				478360821C05DFBD00A60F4B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		478360831C05DFBD00A60F4B /* Build configuration list for PBXNativeTarget "CarBrandUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				478360841C05DFBD00A60F4B /* Debug */,
+				478360851C05DFBD00A60F4B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 478360481C05DFBC00A60F4B /* Project object */;
+}
