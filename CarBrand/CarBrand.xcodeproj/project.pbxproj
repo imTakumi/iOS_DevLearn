@@ -15,6 +15,8 @@
 		478360631C05DFBC00A60F4B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 478360611C05DFBC00A60F4B /* LaunchScreen.storyboard */; };
 		4783606E1C05DFBD00A60F4B /* CarBrandTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4783606D1C05DFBD00A60F4B /* CarBrandTests.m */; };
 		478360791C05DFBD00A60F4B /* CarBrandUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 478360781C05DFBD00A60F4B /* CarBrandUITests.m */; };
+		478360871C05E4F300A60F4B /* heros.plist in Resources */ = {isa = PBXBuildFile; fileRef = 478360861C05E4F300A60F4B /* heros.plist */; };
+		4783608A1C05E53C00A60F4B /* Hero.m in Sources */ = {isa = PBXBuildFile; fileRef = 478360891C05E53C00A60F4B /* Hero.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,9 @@
 		478360741C05DFBD00A60F4B /* CarBrandUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CarBrandUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		478360781C05DFBD00A60F4B /* CarBrandUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CarBrandUITests.m; sourceTree = "<group>"; };
 		4783607A1C05DFBD00A60F4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		478360861C05E4F300A60F4B /* heros.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = heros.plist; sourceTree = "<group>"; };
+		478360881C05E53C00A60F4B /* Hero.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Hero.h; sourceTree = "<group>"; };
+		478360891C05E53C00A60F4B /* Hero.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Hero.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +111,8 @@
 				478360591C05DFBC00A60F4B /* ViewController.h */,
 				4783605A1C05DFBC00A60F4B /* ViewController.m */,
 				4783605C1C05DFBC00A60F4B /* Main.storyboard */,
+				478360881C05E53C00A60F4B /* Hero.h */,
+				478360891C05E53C00A60F4B /* Hero.m */,
 				4783605F1C05DFBC00A60F4B /* Assets.xcassets */,
 				478360611C05DFBC00A60F4B /* LaunchScreen.storyboard */,
 				478360641C05DFBC00A60F4B /* Info.plist */,
@@ -117,6 +124,7 @@
 		478360531C05DFBC00A60F4B /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				478360861C05E4F300A60F4B /* heros.plist */,
 				478360541C05DFBC00A60F4B /* main.m */,
 			);
 			name = "Supporting Files";
@@ -245,6 +253,7 @@
 			files = (
 				478360631C05DFBC00A60F4B /* LaunchScreen.storyboard in Resources */,
 				478360601C05DFBC00A60F4B /* Assets.xcassets in Resources */,
+				478360871C05E4F300A60F4B /* heros.plist in Resources */,
 				4783605E1C05DFBC00A60F4B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -273,6 +282,7 @@
 				4783605B1C05DFBC00A60F4B /* ViewController.m in Sources */,
 				478360581C05DFBC00A60F4B /* AppDelegate.m in Sources */,
 				478360551C05DFBC00A60F4B /* main.m in Sources */,
+				4783608A1C05E53C00A60F4B /* Hero.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
