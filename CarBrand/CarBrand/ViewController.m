@@ -9,7 +9,7 @@
 #import "ViewController.h"
 #import "Hero.h"
 
-@interface ViewController () <UITableViewDataSource>
+@interface ViewController () <UITableViewDataSource, UITableViewDelegate>
 
 @property (nonatomic, strong) UITableView *tableView;
 @property (nonatomic, strong) NSArray *heros;
@@ -29,6 +29,7 @@
         _tableView = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
         
         _tableView.dataSource = self;
+        _tableView.delegate = self;
         [self.view addSubview:_tableView];
     }
     return _tableView;
@@ -38,7 +39,8 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     [self tableView];
-
+    
+//    self.tableView.rowHeight = 80;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -52,12 +54,23 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:nil];
+    UITableViewCell *cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:nil];
     
     Hero *hero = self.heros[indexPath.row];
     cell.textLabel.text = hero.name;
+    cell.imageView.image = [UIImage imageNamed:hero.icon];
+    cell.detailTextLabel.text = hero.intro;
     
     return cell;
+}
+
+#pragma mark 代理方法
+/** 
+ 代理方法优先级高
+ 应用场景：很多程序行高不一样，比如微博
+ */
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    return 60;
 }
 
 @end
