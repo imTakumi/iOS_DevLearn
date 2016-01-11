@@ -30,7 +30,7 @@
 
 - (UITableView *)tableView {
     if (_tableView == nil) {
-        _tableView = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStyleGrouped];
+        _tableView = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
         _tableView.dataSource = self;
         [self.view addSubview:_tableView];
     }
@@ -78,6 +78,19 @@
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
     CarGroup *carGourp = self.carGroups[section];
     return carGourp.title;
+}
+
+//  创建右侧索引
+- (nullable NSArray<NSString *> *)sectionIndexTitlesForTableView:(UITableView *)tableView {
+    /**
+    NSMutableArray *mArray = [NSMutableArray array];
+    for (CarGroup *carGroup in self.carGroups) {
+        [mArray addObject:carGroup.title];
+    }
+    return mArray;
+        */
+    //  使用KVC代替上面内容（KVC用来间接获取或者修改对象内容）
+    return [self.carGroups valueForKeyPath:@"title"];
 }
 
 @end
